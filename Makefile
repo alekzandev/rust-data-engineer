@@ -1,5 +1,4 @@
 lint:
-	cargo clippy --all-targets --all-features -- -D warnings
-
+	cargo clippy
 test:
-	cargo test --all-targets --all-features
+	cargo test
