@@ -4,10 +4,7 @@ on:
   push:
     branches:
       - trunk
-  pull_request:
-    branches:
-      - trunk
-
+      
 jobs:
   clippy:
     runs-on: ubuntu-latest
