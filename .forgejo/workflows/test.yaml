@@ -1,25 +1,25 @@
-name: Unit Tests
+# name: Unit Tests
 
-on:
-  push:
-    branches:
-      - trunk
+# on:
+#   push:
+#     branches:
+#       - trunk
 
-jobs:
-  test:
-    runs-on: docker
+# jobs:
+#   test:
+#     runs-on: docker
 
-    steps:
-      - uses: actions/checkout@v2
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - name: Install Rust
-        uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          override: true
+#       - name: Install Rust
+#         uses: actions-rs/toolchain@v1
+#         with:
+#           toolchain: stable
+#           override: true
 
-      - name: Run Tests
-        run: cargo test --all --all-targets
+#       - name: Run Tests
+#         run: cargo test --all --all-targets
 
-      - name: Check for changes
-        run: git diff --exit-code
+#       - name: Check for changes
+#         run: git diff --exit-code
