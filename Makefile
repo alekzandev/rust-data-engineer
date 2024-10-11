@@ -1,4 +1,3 @@
+# Lint all rust files with Clippy in the folder modules
 lint:
-	cargo clippy
-test:
-	cargo test
+    cargo clippy --manifest-path modules/1/Cargo.toml

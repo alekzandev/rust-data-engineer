@@ -1,7 +1,7 @@
-use module1::add;
-use module1::div;
-use module1::mul;
-use module1::sub;
+use module1::calculator::add;
+use module1::calculator::div;
+use module1::calculator::mul;
+use module1::calculator::sub;
 
 fn main() {
     println!("Hello, world!");
