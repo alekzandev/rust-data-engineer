@@ -2,9 +2,23 @@
 name = "rust-data-engineer"
 version = "0.1.0"
 edition = "2021"
+authors = ["alekzandev <aleksandev@proton.me>"]
+description = "A comprehensive Data Engineering course implementation in Rust"
+license = "MIT"
+repository = "https://github.com/alekzandev/rust-data-engineer/tree/w1/lab1"
 
 [[bin]]
 name = "rust-data-engineer"
 path = "modules/1/src/main.rs"
 
 [dependencies]
+tokio = { version = "1.28", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "4.2", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+[dev-dependencies]
+criterion = "0.5"
+mockall = "0.11"
